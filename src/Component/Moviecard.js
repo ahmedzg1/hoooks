@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Card, Button } from "react-bootstrap";
 import ReactStars from "react-rating-stars-component";
-
+import {link} from 'react-router-dom'
  
 
   const Moviecard = ({movie}) => {
@@ -12,7 +12,7 @@ import ReactStars from "react-rating-stars-component";
         <Card.Body>
           <Card.Title>{movie.title}</Card.Title>
           <Card.Text>{movie.description}</Card.Text>
-          <Button variant="primary">Go somewhere</Button>
+          <Button variant="primary"href="/Description">Go somewhere</Button>
         </Card.Body>
         <ReactStars
     count={5}

@@ -1,22 +1,11 @@
 import React, { useState } from "react";
+import { Form } from "react-bootstrap";
 import ADD from "./ADD";
 import Filter from "./Filter";
 import Moviecard from "./Moviecard";
 
-const Movielist = () => {
- 
 
-   
-        
-      
-       
-      
-   
- 
- 
- 
- 
- 
+const Movielist = () => {
 
  
   

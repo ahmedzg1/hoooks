@@ -1,6 +1,7 @@
 import './App.css';
 import Movielist from "./Component/Movielist"
-
+import { BrowserRouter, Route, Link } from "react-router-dom";
+import Description from './Component/Description';
 
 function App() {
   
@@ -8,8 +9,12 @@ function App() {
     <div className="App">
       
       
-   <Movielist/>
    
+   <BrowserRouter>
+   <Route exact path="/" component={Movielist} />
+   <Route path='/description' component={Description}     />
+   
+   </BrowserRouter>
     </div>
   );
 }
