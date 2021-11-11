@@ -1,7 +1,8 @@
 import './App.css';
 import Movielist from "./Component/Movielist"
-import { BrowserRouter, Route, Link } from "react-router-dom";
+
 import Description from './Component/Description';
+import { Route, Routes } from 'react-router';
 
 function App() {
   
@@ -10,11 +11,11 @@ function App() {
       
       
    
-   <BrowserRouter>
-   <Route exact path="/" component={Movielist} />
-   <Route path='/description' component={Description}     />
+   <Routes>
+   <Route exact path="/" element={<Movielist/>} />
+   <Route path='/description' element={<Description/>}     />
    
-   </BrowserRouter>
+   </Routes>
     </div>
   );
 }
